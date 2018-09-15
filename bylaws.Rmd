@@ -1,0 +1,68 @@
+---
+title: "Operating Agreement / Bylaws"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+---
+
+### 1. RESPONSIBILITIES
+
+All Partners shall participate in ongoing activities of the Partnership by:
+
+* Preparing and posting analyses or other assignments to further the investment endeavors of the Investment Club;
+* Regularly contributing constructive comments about the club operations and investment opportunities;
+* Making regular investments through the Partnership;
+* Keeping a current mailing address on file with the SECRETARY.
+
+### 2. OFFICERS
+
+Annually, at the first meeting in January, partners shall be elected by a majority vote of those present to the following positions and duties:
+
+__PRESIDENT__: The PRESIDENT will appoint committees, oversee all activities of the Partnership, and preside over the meetings. The PRESIDENT will have the power to create and conduct an agenda for all meetings, and may enforce or waive formalities of such an agenda. The PRESIDENT will have the power to recommend disciplinary action to any Partner who, in the opinion of a partner, is considered to have acted contrary to the provisions of these Bylaws or has displayed negligence in the performance of duties or expectations. The PRESIDENT will also have the power to BUY and SELL securities in the absence of the TREASURER.
+
+__VICE PRESIDENT__: The VICE PRESIDENT will assume the duties of the PRESIDENT when absent or unable to serve the office. The VICE PRESIDENT will be responsible for the activities, progress, and reports of all committees that are formed.
+
+__SECRETARY__: His / her duty is to keep a record of the actions authorized by the partners and notify partners of meeting and other activities.
+
+__TREASURER__: His / her duty is to keep a record of the Partnership's receipts and disbursements and the partners' interests in the Partnership. He / She will calculate and distribute valuation statements on a periodic basis, and any other statistical reports required. He / she will keep a duplicate record of the brokerage account. The TREASURER will serve as agent for the Partnership to place BUY and SELL orders; and will distribute and collect funds. The TREASURER will be responsible for all cash and broker transactions; the collection of dues; and notifying the SECRETARY of Partners in default of dues.
+
+Any office that becomes vacant during the year shall be filled as soon as possible following the same nomination and voting procedures described above. In the event a position is vacant, the PRESIDENT shall assume or delegate the duties of that position to a Partner.
+
+Partners may continue in the same elected position for more than one consecutive year.
+
+### 3. MEETINGS
+
+The meetings shall be held monthly on the first Tuesday of every month unless set otherwise by the PRESIDENT.
+
+The PRESIDENT, in consultation and with the approval of another officer, may call special meeting and cancel regularly scheduled meetings.
+
+### 4. CONTRIBUTIONS
+
+Partners contributions shall be recorded on a unit system basis with the value of each unit determined on the valuation date as set forth in Article 7 of the PARTNERSHIP AGREEMENT.
+
+Each partner shall pledge the number of units he wishes to purchase based on the value per unit determined for that month. The TREASURER must receive such pledges at the monthly meeting. Monies in payment thereof must be deposited within fourteen days after the meeting.
+
+### 5. REPORTS
+
+The TREASURER shall prepare a statement of the Partnership account and the individual partner's interest for each business meeting.
+
+### 6. TRANSACTIONS
+
+Only the TREASURER or another partner empowered by the Partnership as an authorized agent is allowed to place the buy and sell orders authorized by the partners.
+
+### 7. VOTING
+
+#### INVESTMENT DECISIONS
+
+A quorum as described in the PARTNERSHIP AGREEMENT (Article 13. Investment Decisions) must be obtained in-person or by written electronic means to conduct complete business transactions.
+
+Voting on sell recommendations shall precede voting on buy recommendations.
+
+At any time, in between regularly scheduled meetings, the members of the Partnership are empowered to contact each member in order to achieve acknowledged responses indicating a quorum as defined in the PARTNERSHIP AGREEMENT (Article 13. INVESTMENT DECISIONS) to transact such business of the Partnership as would be in the best interest of the Partnership. The SECRETARY shall record such decisions in the minutes, and the remaining
+partners shall be notified as soon as practical thereafter of such decision.
+
+#### OTHER DECISIONS
+
+At any regularly scheduled meeting, this OPERATING AGREEMENT may be changed by a vote of two-thirds (2/3rds) of the total membership, including written ballots of partners not present at the meeting.

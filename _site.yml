@@ -1,0 +1,26 @@
+name: "banana-stand"
+output_dir: "."
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+navbar:
+  title: "Banana Stand"
+  left:
+    - text: "Member Status"
+      href: index.html
+    - text: "Portfolio Performance"
+      href: portfolio.html
+    - text: "Club Documents"
+      menu: 
+        - text: "Partnership Agreement"
+          href: agreement.html
+        - text: "Bylaws"
+          href: bylaws.html
+        - text: "Investment Philosophy"
+          href: philosophy.html
+  right:
+    - icon: fa-envelope-o
+      href: mailto:basic.investmentclub@gmail.com
+    - icon: fa-github
+      href: https://github.com/banana-stand

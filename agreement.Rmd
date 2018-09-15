@@ -1,0 +1,157 @@
+---
+title: "Partnership Agreement"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+---
+
+### 1. FORMATION OF PARTNERSHIP
+
+The undersigned hereby form a General Partnership, in and in accordance with the laws of the state of New Jersey.
+
+### 2. NAME OF PARTNERSHIP / INITIAL REGISTERED OFFICE & AGENT
+
+The name of the Partnership shall be "Banana Stand Investment Club" dba BaSIC. The address of the initial registered office is _(information hidden)_. The name of the initial registered agent is _(information hidden)_.
+
+### 3. TERM
+
+The Partnership shall begin on April 1, 2018 and shall terminate on December 31, 2038.
+
+### 4. PURPOSE
+
+The purpose of the Partnership is to invest the assets of the Partnership for the education and benefit of the partners. The investments may be in whatever form the Partnership deems suitable.
+
+### 5. MEETINGS
+
+Periodic meetings shall be held as determined by the Partnership, as set out in the OPERATING AGREEMENT.
+
+### 6. CONTRIBUTIONS
+
+The partners may make contributions to the Partnership on the date of each periodic meeting. Any partner not fulfilling the minimum contributions is subject to immediate dismissal in accordance to Article 21 below.
+
+The initial contribution shall be a minimum of $500.00 to the nearest tenth of a valuation unit. Thereafter the minimum monthly contributions are to be made in tenths of a valuation unit nearest to and greater than $50.00. The valuation unit will be decided upon the first meeting.
+
+At the request of a partner, the partner's required monthly contributions may be waived by the President for a period not to exceed six months. An additional waiver period of up to six months may be granted by a majority vote of all the remaining partners at a regularly scheduled meeting. Partners not present may be represented by written ballot (email, or paper).
+
+During the period of waiver of monthly contributions, the partner shall retain voting and all other rights of the Partnership.
+
+### 7. VALUATION
+
+The current value of the assets and property of the Partnership, less the current value of the debts and liabilities of the Partnership (hereafter referred to as "value of the Partnership"), shall be the first day of the month. That day's primary market closing prices must be used for listed securities and the closing "bid" prices for any unlisted or untraded listed securities. Method of valuation of non-securities shall be determined at the time of the new commitment recommendation as prescribed in Article 13.
+
+The aforementioned date of valuation shall hereinafter be referred to as "valuation date".
+
+A security suspended from trading shall be given a value of zero.
+
+### 8. PARTNERSHIP INTEREST
+
+There shall be maintained an account in the name of each partner showing the dollar amounts contributed and the proportionate Partnership interest arising therefrom. The proportionate Partnership interest arising from each contribution is based on the value of the Partnership as of the last valuation date.
+
+### 9. MANAGEMENT
+
+Each partner shall participate in the management and conduct of the affairs of the Partnership. Each partner shall be entitled to one vote in the conduct of all the affairs of the Partnership, regardless of the proportion that his or her Partnership interest bears to the total of the Partnership interest of all the partners.
+
+### 10. SHARING OF THE PROFITS AND LOSSES
+
+Net profits and losses of the Partnership shall inure to, and be borne by, the partners in proportion to their interests in the Partnership. In the event the Partnership cannot meet its obligations, each partner shall be liable for obligations equal to his proportionate interest in the Partnership.
+
+### 11. BOOKS OF ACCOUNT
+
+Books of account of the transactions of the Partnership shall be kept and at all times be available and open to inspection and examination by any partner.
+
+### 12. ANNUAL ACCOUNTING
+
+At the end of each calendar year, a full and complete account of the condition of the Partnership shall be made to the partners.
+
+### 13. INVESTMENT DECISIONS
+
+The following sub-paragraphs define the two types of investment decisions that can be made by this Partnership, the required quorum and majority needed to complete transactions during or apart from regularly scheduled meetings, and the rules for facilitating decisions apart from regularly scheduled meetings. (Commodities and options are not considered securities in the context of Article 13.)
+
+* For investment decisions involving stocks, bonds and other securities during regularly scheduled meetings:
+    * A committee of three shall be appointed monthly, by the President, and charged to review the portfolio and make sell recommendations it deems advisable, and also any purchase recommendations of new or existing investments, including the quantities of the purchases and/or sales.
+    * A quorum consisting of fifty (50) percent of the partners must be present in person or by electronic means to conduct business.
+    * The committee's purchase recommendations regarding securities require a simple majority vote of the partners present at the meeting.
+    * The committee's sell recommendations regarding securities require a simple majority vote of partners present at the meeting.
+    * All other investment decisions at regularly scheduled meetings (involving securities) not contained in the committee's report shall require a two-thirds (2/3) majority of those present at the meeting.
+    
+* For investment decisions involving anything other than stocks, bonds or other securities:
+    * For these Transactions, a quorum consisting of seventy-five (75) percent of the partners must be present in person or by electronic means to conduct business.
+    * Any recommendation by the committee or from any member that involves the purchase or sale of anything other than stocks, bonds, or other securities shall require a three-quarters (3/4) vote of partners.
+    * At the time of any new commitment recommendation of an item that is not currently in the portfolio and is not a security, the method of safekeeping and the method of pricing the item for valuation both for "valuation date" purposes and upon death or incapacity of a partner, shall be determined and voted upon as part of the recommendation, and shall be binding until changed by a vote of three-quarters (3/4) of those present at a subsequent meeting.
+    
+* To facilitate investment decisions of either securities or non-securities outside of regularly scheduled meetings:
+    * Any member can propose Transactions of new or existing investments, including the quantities of the purchases and/or sales.
+    * A quorum consisting of personal or electronic acknowledgment from seventy-five (75) percent of the partners must be attained in order to conclude these Transactions.
+    * Transactions outside of regularly scheduled meetings require three-quarters (3/4) majority of those participating in the quorum.
+    * An Officer of the Partnership, or the President's designate will preside over
+and keep track of voting on the Transaction.
+    * Once a quorum is achieved, the Officer or designate in charge will determine if issues have had ample airing of member's viewpoints before rendering the vote final.
+    * To provide ample time for a quorum to develop, a maximum of seventy-two (72) hours will be allowed before a question quorum call is concluded and the decision or lack thereof is considered final. During this time, the members may lobby fellow members regarding the issues and/or to solicit the required quorum.
+
+### 14. ASSET ACCOUNTS
+
+The Partnership shall select one or more partners to act as its Agent(s) to enter into agreements of the Partnership's choosing for the purchase or sale of assets. 
+
+Stocks, bonds, securities, commodities and options owned by the Partnership shall be held at a brokerage firm for the account of the Partnership.
+
+All other assets of the Partnership shall be held in accordance with the provisions of Article 13.
+
+The Treasurer will share with the President the confidential information necessary to access the brokerage account(s).
+
+### 15. COMPENSATION
+
+No partner shall be compensated for services rendered to the Partnership, except for reimbursement of incidental expenses approved by the Partnership, and except for brokerage commissions if a member of the Partnership is selected as the Partnership's broker.
+
+### 16. ADDITIONAL PARTNERS
+
+Additional partners shall be admitted at any time upon the consent of three-quarters (3/4) of all partners. However, the total number of partners shall not exceed twenty. All partners shall be notified one week in advance of a vote for consideration of a new partner.
+
+No non-partner shall be automatically admitted as successor to any withdrawing or deceased partner. (See Articles 17, 18, 19 and 20.)
+
+### 17. VOLUNTARY TERMINATION
+
+The Partnership may be dissolved by agreement of the partners whose individual accounts total a majority of the assets of the Partnership. Written notice of said agreement to dissolve the Partnership shall be given to all the partners by the parties to the agreement.
+
+At the next regularly scheduled meeting the Agent shall be charged by the President to sell the assets of the Partnership, and distributing to the partners or their legal representatives cash in proportion to the Partnership interest as of that meeting. Distribution must be made within one month of the meeting.
+
+### 18. WITHDRAWAL OF A PARTNER OR REDUCTION IN PARTNERSHIP INTEREST
+
+Any partner may voluntarily withdraw from the Partnership. He or she shall give written notice to the President or Treasurer and such withdrawal shall become effective on the valuation date following receipt of such written notice of withdrawal. The withdrawing partner shall be paid the full market value of his or her Partnership interest less the total costs incurred, if any, by reason of the withdrawal.
+
+Any partner may reduce his or her proportionate Partnership interest without limit (in tenths of a unit) provided that after the reduction his percentage of the Partnership's total shares is not less than two and one-half (2 ½) percent. He shall give written notice to the President or Treasurer and such reduction shall become effective at the next valuation date following receipt of said notice. The partner shall be paid the full market value of that portion of his Partnership interest he wishes liquidated, less costs incurred, if any.
+
+In cases of full or partial withdrawal, the other partners shall be given an option to purchase said interest at full market value within a period of thirty days after the valuation date following receipt of the notice, in which time the withdrawing partner must be paid. Commissions would be subtracted from partial or full withdrawals. Any estimated current debits accrued by the Partnership will be proportionally debited to the withdrawing partner's account at the time of withdrawal.
+
+A cash distribution to all the partners shall be made after a two-thirds (2/3) majority vote of the partners present at a regularly scheduled meeting. The distribution shall be made in proportion to each partner' s interest in the Partnership as of the valuation date for that meeting. The distribution shall be made from uncommitted funds. If necessary, sale of the assets of the Partnership to satisfy all or a portion of the distribution shall be decided by a three-quarters (3/4) majority vote of partners present. Failure to reach an agreement on sale of assets to satisfy all or a part of the distribution shall reduce the distribution to the uncommitted funds. (Uncommitted funds include cash, and monies invested in a money fund.) Each partner shall have the privilege to refuse all or a portion of his share of the distribution.
+
+### 19. DEATH OR INCAPACITY OF A PARTNER
+
+Each partner shall designate a beneficiary or beneficiaries on the form prescribed for the disposal of his Partnership interest in the event of legal notification of his death or incapacity. Disposal shall be in accordance with the initial paragraph of Article 18. Valuation of said interest, however, shall be as at the close of business on the date of death or legal incapacity, or the close of the business day preceding the date of death or legal incapacity if either occur on a non-business day.
+
+### 20. FORBIDDEN ACTS
+
+No partner shall:
+
+* Have the right or authority to bind or obligate the Partnership to any extent with regard to any matter outside the scope of the Partnership business.
+* Without the approval of the Partnership, as set forth above, assign, transfer, pledge, mortgage or sell all or part of his interest in the Partnership to any other partner or other person, or enter into any agreement as the result of which any person not a partner shall become interested with him, or without him, in the partnership.
+* Use the Partnership name, credit or property for other than Partnership purposes.
+* Do any act detrimental to the interest of the Partnership or which would make it impossible to carry on the business or affairs of the Partnership.
+* No partner who is an attorney shall exercise any control over, or be involved in any decision making concerning, the buying or selling of any stock in any company which may present a conflict of interest for that attorney. No partner who is an attorney for a governmental regulatory agency or department shall exercise any control over, or be involved in any decision making concerning, the buying and selling of any stock in any company which may present a conflict of interest for that attorney's representation of that agency or department.
+
+### 21. EXPULSION
+
+Any partner can be expelled by a three-quarters (3/4) vote of the remaining partners at a meeting requiring that a quorum be present in person with all remaining partners represented by written ballot. Disbursement of funds shall be effected in accordance with Article 18. A quorum is defined as fifty (50) percent or more of the partners.
+
+### 22. AMENDMENTS
+
+Amendments of the Partnership Agreement can be made at a meeting only if fifty (50) percent of the total number of partners is present in person. Partners not present at the meeting may be represented by written ballot. Approval of seventy-five (75) percent of the total number of partners is necessary to effect a change in the Partnership Agreement.
+
+### 23. OPERATING AGREEMENT / BYLAWS 
+
+The partnership shall adopt bylaws governing the conduct of club business. These bylaws, including any amendments thereof as may occur, are hereby incorporated by reference, and constitute part of this agreement. In the case of a direct conflict between the bylaws and the other provisions of the partnership agreement, the partnership agreement shall govern.
+
+This Agreement of Partnership shall be binding upon the respective heirs, executors, administrators, and personal representatives of the Partners.
+
+The Partners have caused this Agreement of Partnership to be executed on the dates indicated below, effective as of the date indicated above.

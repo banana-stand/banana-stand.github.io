@@ -1,0 +1,16 @@
+---
+title: "Investment Philosophy"
+output: html_document
+---
+
+The primary goal of BaSIC is to educate our members about investing. BaSIC aims to foster an environment of learning while also generating wealth for its members. Being newly formed, we expect our investing strategy to evolve. The core tenets of our current investment philosophy are as follows.
+
+__Investment Instruments__: We will limit out investments to only equity securities, which may include long positions of individual company stock and ETFs composed of equities. We will avoid derivatives and debt securities due to complexity and differences in valuation.
+
+__Time Horizon__: All securities will be bought with the intent to be held for longer than a one year time period in order to realize tax advantages for long term capital gains. Securities may be sold earlier if a risk management limit is triggered. 
+
+__Portfolio Allocation__: We seek to invest in companies that we believe have growth potential and easily understandable business models. We will avoid highly speculative investments and aim to have a balanced portfolio across multiple stock sectors. The Investment Committee will perform thorough fundamental research on every investment considered, and their trade recommendations will be voted on at monthly meetings to determine specific portfolio holdings. On a quarterly basis, the Investment Committee will also evaluate BaSIC's portfolio for rebalancing purposes.
+
+__Benchmark__: Our portfolio will be benchmarked against the S&P 500 index.
+
+__Risk Management__: We believe that diversification and preservation of capital are essential components of long term investment success. Excessive concentration in a single stock position should be avoided, and appropriate stop loss limits will be put in place to control for significant drawdowns.

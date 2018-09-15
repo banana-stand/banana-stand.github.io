@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Partnership Agreement</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Banana Stand</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Member Status</a>
+</li>
+<li>
+  <a href="portfolio.html">Portfolio Performance</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Club Documents
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="agreement.html">Partnership Agreement</a>
+    </li>
+    <li>
+      <a href="bylaws.html">Bylaws</a>
+    </li>
+    <li>
+      <a href="philosophy.html">Investment Philosophy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:basic.investmentclub@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/banana-stand">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Partnership Agreement</h1>
+
+</div>
+
+
+<div id="formation-of-partnership" class="section level3">
+<h3>1. FORMATION OF PARTNERSHIP</h3>
+<p>The undersigned hereby form a General Partnership, in and in accordance with the laws of the state of New Jersey.</p>
+</div>
+<div id="name-of-partnership-initial-registered-office-agent" class="section level3">
+<h3>2. NAME OF PARTNERSHIP / INITIAL REGISTERED OFFICE &amp; AGENT</h3>
+<p>The name of the Partnership shall be “Banana Stand Investment Club” dba BaSIC. The address of the initial registered office is <em>(information hidden)</em>. The name of the initial registered agent is <em>(information hidden)</em>.</p>
+</div>
+<div id="term" class="section level3">
+<h3>3. TERM</h3>
+<p>The Partnership shall begin on April 1, 2018 and shall terminate on December 31, 2038.</p>
+</div>
+<div id="purpose" class="section level3">
+<h3>4. PURPOSE</h3>
+<p>The purpose of the Partnership is to invest the assets of the Partnership for the education and benefit of the partners. The investments may be in whatever form the Partnership deems suitable.</p>
+</div>
+<div id="meetings" class="section level3">
+<h3>5. MEETINGS</h3>
+<p>Periodic meetings shall be held as determined by the Partnership, as set out in the OPERATING AGREEMENT.</p>
+</div>
+<div id="contributions" class="section level3">
+<h3>6. CONTRIBUTIONS</h3>
+<p>The partners may make contributions to the Partnership on the date of each periodic meeting. Any partner not fulfilling the minimum contributions is subject to immediate dismissal in accordance to Article 21 below.</p>
+<p>The initial contribution shall be a minimum of $500.00 to the nearest tenth of a valuation unit. Thereafter the minimum monthly contributions are to be made in tenths of a valuation unit nearest to and greater than $50.00. The valuation unit will be decided upon the first meeting.</p>
+<p>At the request of a partner, the partner’s required monthly contributions may be waived by the President for a period not to exceed six months. An additional waiver period of up to six months may be granted by a majority vote of all the remaining partners at a regularly scheduled meeting. Partners not present may be represented by written ballot (email, or paper).</p>
+<p>During the period of waiver of monthly contributions, the partner shall retain voting and all other rights of the Partnership.</p>
+</div>
+<div id="valuation" class="section level3">
+<h3>7. VALUATION</h3>
+<p>The current value of the assets and property of the Partnership, less the current value of the debts and liabilities of the Partnership (hereafter referred to as “value of the Partnership”), shall be the first day of the month. That day’s primary market closing prices must be used for listed securities and the closing “bid” prices for any unlisted or untraded listed securities. Method of valuation of non-securities shall be determined at the time of the new commitment recommendation as prescribed in Article 13.</p>
+<p>The aforementioned date of valuation shall hereinafter be referred to as “valuation date”.</p>
+<p>A security suspended from trading shall be given a value of zero.</p>
+</div>
+<div id="partnership-interest" class="section level3">
+<h3>8. PARTNERSHIP INTEREST</h3>
+<p>There shall be maintained an account in the name of each partner showing the dollar amounts contributed and the proportionate Partnership interest arising therefrom. The proportionate Partnership interest arising from each contribution is based on the value of the Partnership as of the last valuation date.</p>
+</div>
+<div id="management" class="section level3">
+<h3>9. MANAGEMENT</h3>
+<p>Each partner shall participate in the management and conduct of the affairs of the Partnership. Each partner shall be entitled to one vote in the conduct of all the affairs of the Partnership, regardless of the proportion that his or her Partnership interest bears to the total of the Partnership interest of all the partners.</p>
+</div>
+<div id="sharing-of-the-profits-and-losses" class="section level3">
+<h3>10. SHARING OF THE PROFITS AND LOSSES</h3>
+<p>Net profits and losses of the Partnership shall inure to, and be borne by, the partners in proportion to their interests in the Partnership. In the event the Partnership cannot meet its obligations, each partner shall be liable for obligations equal to his proportionate interest in the Partnership.</p>
+</div>
+<div id="books-of-account" class="section level3">
+<h3>11. BOOKS OF ACCOUNT</h3>
+<p>Books of account of the transactions of the Partnership shall be kept and at all times be available and open to inspection and examination by any partner.</p>
+</div>
+<div id="annual-accounting" class="section level3">
+<h3>12. ANNUAL ACCOUNTING</h3>
+<p>At the end of each calendar year, a full and complete account of the condition of the Partnership shall be made to the partners.</p>
+</div>
+<div id="investment-decisions" class="section level3">
+<h3>13. INVESTMENT DECISIONS</h3>
+<p>The following sub-paragraphs define the two types of investment decisions that can be made by this Partnership, the required quorum and majority needed to complete transactions during or apart from regularly scheduled meetings, and the rules for facilitating decisions apart from regularly scheduled meetings. (Commodities and options are not considered securities in the context of Article 13.)</p>
+<ul>
+<li>For investment decisions involving stocks, bonds and other securities during regularly scheduled meetings:
+<ul>
+<li>A committee of three shall be appointed monthly, by the President, and charged to review the portfolio and make sell recommendations it deems advisable, and also any purchase recommendations of new or existing investments, including the quantities of the purchases and/or sales.</li>
+<li>A quorum consisting of fifty (50) percent of the partners must be present in person or by electronic means to conduct business.</li>
+<li>The committee’s purchase recommendations regarding securities require a simple majority vote of the partners present at the meeting.</li>
+<li>The committee’s sell recommendations regarding securities require a simple majority vote of partners present at the meeting.</li>
+<li>All other investment decisions at regularly scheduled meetings (involving securities) not contained in the committee’s report shall require a two-thirds (2/3) majority of those present at the meeting.</li>
+</ul></li>
+<li>For investment decisions involving anything other than stocks, bonds or other securities:
+<ul>
+<li>For these Transactions, a quorum consisting of seventy-five (75) percent of the partners must be present in person or by electronic means to conduct business.</li>
+<li>Any recommendation by the committee or from any member that involves the purchase or sale of anything other than stocks, bonds, or other securities shall require a three-quarters (3/4) vote of partners.</li>
+<li>At the time of any new commitment recommendation of an item that is not currently in the portfolio and is not a security, the method of safekeeping and the method of pricing the item for valuation both for “valuation date” purposes and upon death or incapacity of a partner, shall be determined and voted upon as part of the recommendation, and shall be binding until changed by a vote of three-quarters (3/4) of those present at a subsequent meeting.</li>
+</ul></li>
+<li>To facilitate investment decisions of either securities or non-securities outside of regularly scheduled meetings:
+<ul>
+<li>Any member can propose Transactions of new or existing investments, including the quantities of the purchases and/or sales.</li>
+<li>A quorum consisting of personal or electronic acknowledgment from seventy-five (75) percent of the partners must be attained in order to conclude these Transactions.</li>
+<li>Transactions outside of regularly scheduled meetings require three-quarters (3/4) majority of those participating in the quorum.</li>
+<li>An Officer of the Partnership, or the President’s designate will preside over and keep track of voting on the Transaction.</li>
+<li>Once a quorum is achieved, the Officer or designate in charge will determine if issues have had ample airing of member’s viewpoints before rendering the vote final.</li>
+<li>To provide ample time for a quorum to develop, a maximum of seventy-two (72) hours will be allowed before a question quorum call is concluded and the decision or lack thereof is considered final. During this time, the members may lobby fellow members regarding the issues and/or to solicit the required quorum.</li>
+</ul></li>
+</ul>
+</div>
+<div id="asset-accounts" class="section level3">
+<h3>14. ASSET ACCOUNTS</h3>
+<p>The Partnership shall select one or more partners to act as its Agent(s) to enter into agreements of the Partnership’s choosing for the purchase or sale of assets.</p>
+<p>Stocks, bonds, securities, commodities and options owned by the Partnership shall be held at a brokerage firm for the account of the Partnership.</p>
+<p>All other assets of the Partnership shall be held in accordance with the provisions of Article 13.</p>
+<p>The Treasurer will share with the President the confidential information necessary to access the brokerage account(s).</p>
+</div>
+<div id="compensation" class="section level3">
+<h3>15. COMPENSATION</h3>
+<p>No partner shall be compensated for services rendered to the Partnership, except for reimbursement of incidental expenses approved by the Partnership, and except for brokerage commissions if a member of the Partnership is selected as the Partnership’s broker.</p>
+</div>
+<div id="additional-partners" class="section level3">
+<h3>16. ADDITIONAL PARTNERS</h3>
+<p>Additional partners shall be admitted at any time upon the consent of three-quarters (3/4) of all partners. However, the total number of partners shall not exceed twenty. All partners shall be notified one week in advance of a vote for consideration of a new partner.</p>
+<p>No non-partner shall be automatically admitted as successor to any withdrawing or deceased partner. (See Articles 17, 18, 19 and 20.)</p>
+</div>
+<div id="voluntary-termination" class="section level3">
+<h3>17. VOLUNTARY TERMINATION</h3>
+<p>The Partnership may be dissolved by agreement of the partners whose individual accounts total a majority of the assets of the Partnership. Written notice of said agreement to dissolve the Partnership shall be given to all the partners by the parties to the agreement.</p>
+<p>At the next regularly scheduled meeting the Agent shall be charged by the President to sell the assets of the Partnership, and distributing to the partners or their legal representatives cash in proportion to the Partnership interest as of that meeting. Distribution must be made within one month of the meeting.</p>
+</div>
+<div id="withdrawal-of-a-partner-or-reduction-in-partnership-interest" class="section level3">
+<h3>18. WITHDRAWAL OF A PARTNER OR REDUCTION IN PARTNERSHIP INTEREST</h3>
+<p>Any partner may voluntarily withdraw from the Partnership. He or she shall give written notice to the President or Treasurer and such withdrawal shall become effective on the valuation date following receipt of such written notice of withdrawal. The withdrawing partner shall be paid the full market value of his or her Partnership interest less the total costs incurred, if any, by reason of the withdrawal.</p>
+<p>Any partner may reduce his or her proportionate Partnership interest without limit (in tenths of a unit) provided that after the reduction his percentage of the Partnership’s total shares is not less than two and one-half (2 ½) percent. He shall give written notice to the President or Treasurer and such reduction shall become effective at the next valuation date following receipt of said notice. The partner shall be paid the full market value of that portion of his Partnership interest he wishes liquidated, less costs incurred, if any.</p>
+<p>In cases of full or partial withdrawal, the other partners shall be given an option to purchase said interest at full market value within a period of thirty days after the valuation date following receipt of the notice, in which time the withdrawing partner must be paid. Commissions would be subtracted from partial or full withdrawals. Any estimated current debits accrued by the Partnership will be proportionally debited to the withdrawing partner’s account at the time of withdrawal.</p>
+<p>A cash distribution to all the partners shall be made after a two-thirds (2/3) majority vote of the partners present at a regularly scheduled meeting. The distribution shall be made in proportion to each partner’ s interest in the Partnership as of the valuation date for that meeting. The distribution shall be made from uncommitted funds. If necessary, sale of the assets of the Partnership to satisfy all or a portion of the distribution shall be decided by a three-quarters (3/4) majority vote of partners present. Failure to reach an agreement on sale of assets to satisfy all or a part of the distribution shall reduce the distribution to the uncommitted funds. (Uncommitted funds include cash, and monies invested in a money fund.) Each partner shall have the privilege to refuse all or a portion of his share of the distribution.</p>
+</div>
+<div id="death-or-incapacity-of-a-partner" class="section level3">
+<h3>19. DEATH OR INCAPACITY OF A PARTNER</h3>
+<p>Each partner shall designate a beneficiary or beneficiaries on the form prescribed for the disposal of his Partnership interest in the event of legal notification of his death or incapacity. Disposal shall be in accordance with the initial paragraph of Article 18. Valuation of said interest, however, shall be as at the close of business on the date of death or legal incapacity, or the close of the business day preceding the date of death or legal incapacity if either occur on a non-business day.</p>
+</div>
+<div id="forbidden-acts" class="section level3">
+<h3>20. FORBIDDEN ACTS</h3>
+<p>No partner shall:</p>
+<ul>
+<li>Have the right or authority to bind or obligate the Partnership to any extent with regard to any matter outside the scope of the Partnership business.</li>
+<li>Without the approval of the Partnership, as set forth above, assign, transfer, pledge, mortgage or sell all or part of his interest in the Partnership to any other partner or other person, or enter into any agreement as the result of which any person not a partner shall become interested with him, or without him, in the partnership.</li>
+<li>Use the Partnership name, credit or property for other than Partnership purposes.</li>
+<li>Do any act detrimental to the interest of the Partnership or which would make it impossible to carry on the business or affairs of the Partnership.</li>
+<li>No partner who is an attorney shall exercise any control over, or be involved in any decision making concerning, the buying or selling of any stock in any company which may present a conflict of interest for that attorney. No partner who is an attorney for a governmental regulatory agency or department shall exercise any control over, or be involved in any decision making concerning, the buying and selling of any stock in any company which may present a conflict of interest for that attorney’s representation of that agency or department.</li>
+</ul>
+</div>
+<div id="expulsion" class="section level3">
+<h3>21. EXPULSION</h3>
+<p>Any partner can be expelled by a three-quarters (3/4) vote of the remaining partners at a meeting requiring that a quorum be present in person with all remaining partners represented by written ballot. Disbursement of funds shall be effected in accordance with Article 18. A quorum is defined as fifty (50) percent or more of the partners.</p>
+</div>
+<div id="amendments" class="section level3">
+<h3>22. AMENDMENTS</h3>
+<p>Amendments of the Partnership Agreement can be made at a meeting only if fifty (50) percent of the total number of partners is present in person. Partners not present at the meeting may be represented by written ballot. Approval of seventy-five (75) percent of the total number of partners is necessary to effect a change in the Partnership Agreement.</p>
+</div>
+<div id="operating-agreement-bylaws" class="section level3">
+<h3>23. OPERATING AGREEMENT / BYLAWS</h3>
+<p>The partnership shall adopt bylaws governing the conduct of club business. These bylaws, including any amendments thereof as may occur, are hereby incorporated by reference, and constitute part of this agreement. In the case of a direct conflict between the bylaws and the other provisions of the partnership agreement, the partnership agreement shall govern.</p>
+<p>This Agreement of Partnership shall be binding upon the respective heirs, executors, administrators, and personal representatives of the Partners.</p>
+<p>The Partners have caused this Agreement of Partnership to be executed on the dates indicated below, effective as of the date indicated above.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+---
+title: "Portfolio Performance"
+output: html_document
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+LATEST_DATE <- as.Date("2018-09-14")
+
+library(readxl)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(scales)
+library(tidyquant)
+
+tbl_port <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                       sheet = "portfolio", skip = 0)
+
+market_value <- tq_get(tbl_port$SYMBOL, from = (LATEST_DATE - 7), to = LATEST_DATE + 1) %>%
+  group_by(symbol) %>%
+  filter(row_number() == n()) %>%
+  ungroup() %>%
+  select(symbol, close) %>%
+  rename(SYMBOL = symbol) %>%
+  rename(`LAST CLOSE` = close) 
+
+tbl_port <- tbl_port %>% 
+  left_join(market_value) %>%
+  mutate(`MARKET VALUE` = QUANTITY * `LAST CLOSE`) %>%
+  mutate(GAINS = `MARKET VALUE` + DIVIDENDS - `COST BASIS`) %>%
+  mutate(RETURN = GAINS / `COST BASIS`) %>%
+  select(SYMBOL, QUANTITY, `BUY PRICE`, `LAST CLOSE`, `COST BASIS`, DIVIDENDS, `MARKET VALUE`, GAINS, RETURN)
+
+tbl_port <- tbl_port %>%
+  mutate_at(vars(`BUY PRICE`, `LAST CLOSE`, `COST BASIS`, DIVIDENDS, `MARKET VALUE`, GAINS), dollar) %>%
+  mutate_at(vars(QUANTITY), .funs = number, accuracy = 0.01) %>%
+  mutate_at(vars(RETURN), .funs = percent, accuracy = 0.01)
+
+kable(tbl_port, caption = paste0("Data as of ", LATEST_DATE), align = rep('r', ncol(tbl_port))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
+```
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+end <- today()
+start <- end - weeks(8)
+```
+
+### Candlestick Charts: `r { paste0(start, " to ", end) }`
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10}
+end <- today()
+start <- end - weeks(8)
+tq_get(tbl_port$SYMBOL, from = start - days(2*50), to = end) %>%
+  ggplot(aes(x = date, y = close, group = symbol)) +
+  geom_candlestick(aes(open = open, high = high, low = low, close = close)) +
+  geom_ma(ma_fun = SMA, n = 15, color = "black", linetype = 5) +
+  geom_ma(ma_fun = SMA, n = 50, color = "gray", linetype = 5) +
+  labs(title = "15-Day SMA (black), 50-Day SMA (gray)", 
+       subtitle = " ",
+       y = "Closing Price", x = "") + 
+  coord_x_date(xlim = c(start, end)) +
+  facet_wrap(~ symbol, ncol = 3, scale = "free_y") + 
+  theme_tq()
+
+```
+

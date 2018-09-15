@@ -1,0 +1,101 @@
+---
+title: "Member Status"
+output: html_document
+---
+
+## Last Three Valuations
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+MEMBER_COUNT <- 13
+LATEST_DATE <- "2018-09-14"
+
+library(readxl)
+library(stringr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(scales)
+
+tbl_cont <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                       sheet = "contribution", skip = 1)
+tbl_unit <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                       sheet = "unit", skip = 1)
+tbl_perc <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                       sheet = "ownership", skip = 1)
+tbl_mval <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                       sheet = "marketvalue", skip = 1)
+
+member_id <- str_replace(names(tbl_cont)[2:(MEMBER_COUNT+1)], "\\$xx\\.", "M")
+names(tbl_cont)[2:(MEMBER_COUNT+1)] <- member_id
+names(tbl_unit)[2:(MEMBER_COUNT+1)] <- member_id
+names(tbl_perc)[2:(MEMBER_COUNT+1)] <- member_id
+names(tbl_mval)[2:(MEMBER_COUNT+1)] <- member_id
+
+tbl_cont <- tbl_cont %>%
+  select(`Valuation Date`, starts_with("M"), Total) %>%
+  filter(Total > 0)
+tbl_unit <- tbl_unit %>%
+  select(`Valuation Date`, starts_with("M"), Total) %>%
+  filter(`Valuation Date` < LATEST_DATE)
+tbl_perc <- tbl_perc %>%
+  select(`Valuation Date`, starts_with("M"), Total) %>%
+  filter(`Valuation Date` < LATEST_DATE)
+tbl_mval <- tbl_mval %>%
+  select(`Valuation Date`, starts_with("M"), Total) %>%
+  filter(`Valuation Date` < LATEST_DATE)
+
+tbl_cont <- tbl_cont %>% mutate_at(vars(-`Valuation Date`), dollar)
+tbl_unit <- tbl_unit %>% mutate_at(vars(-`Valuation Date`), .funs = number, accuracy = 0.01)
+tbl_perc <- tbl_perc %>% mutate_at(vars(-`Valuation Date`), .funs = percent, accuracy = 0.01)
+tbl_mval <- tbl_mval %>% mutate_at(vars(-`Valuation Date`), dollar)
+
+tbl_display <- bind_rows(tail(tbl_cont,4), tail(tbl_mval,3), tail(tbl_unit,3), tail(tbl_perc,3))
+kable(tbl_display, caption = paste0("Data as of ", LATEST_DATE), align = rep('r', ncol(tbl_display))) %>%
+  column_spec(1, bold = F, width = "9em; display: inline-block;") %>%
+  column_spec(2:15, bold = F, width = "7em;") %>%
+  row_spec(4, bold = T, color = "red") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13) %>%
+  group_rows("Incremental Contributions", 1, 4) %>%
+  group_rows("Owners' Market Value", 5, 7) %>%
+  group_rows("Incremental Units Owned", 8, 10) %>%
+  group_rows("Ownership Percentage", 11, 13)
+```
+
+## All Historical Valuations {.tabset}
+
+### Incremental Contributions
+
+```{r, echo=FALSE}
+kable(head(tbl_cont,-1), align = rep('r', ncol(tbl_cont))) %>%
+  column_spec(1, bold = F, width = "9em; display: inline-block;") %>%
+  column_spec(2:15, bold = F, width = "7em;") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
+```
+
+### Owner's Market Value
+
+```{r, echo=FALSE}
+kable(tbl_mval, align = rep('r', ncol(tbl_mval))) %>%
+  column_spec(1, bold = F, width = "9em; display: inline-block;") %>%
+  column_spec(2:15, bold = F, width = "7em;") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
+```
+
+### Incremental Units Owned
+
+```{r, echo=FALSE}
+kable(tbl_unit, align = rep('r', ncol(tbl_unit))) %>%
+  column_spec(1, bold = F, width = "9em; display: inline-block;") %>%
+  column_spec(2:15, bold = F, width = "7em;") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
+```
+
+### Ownership Percentage
+
+```{r, echo=FALSE}
+kable(tbl_perc, align = rep('r', ncol(tbl_perc))) %>%
+  column_spec(1, bold = F, width = "9em; display: inline-block;") %>%
+  column_spec(2:15, bold = F, width = "7em;") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
+```
+
