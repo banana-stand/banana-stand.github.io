@@ -19,7 +19,7 @@ library(scales)
 tbl_cont <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
                        sheet = "contribution", skip = 1)
 tbl_unit <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
-                       sheet = "unit", skip = 1)
+                       sheet = "unit_cumulative", skip = 1)
 tbl_perc <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
                        sheet = "ownership", skip = 1)
 tbl_mval <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
@@ -36,7 +36,8 @@ tbl_cont <- tbl_cont %>%
   filter(Total > 0)
 tbl_unit <- tbl_unit %>%
   select(`Valuation Date`, starts_with("M"), Total) %>%
-  filter(`Valuation Date` < LATEST_DATE)
+  filter(`Valuation Date` < LATEST_DATE) %>%
+  select(-`Monthly Return`)
 tbl_perc <- tbl_perc %>%
   select(`Valuation Date`, starts_with("M"), Total) %>%
   filter(`Valuation Date` < LATEST_DATE)
@@ -45,7 +46,7 @@ tbl_mval <- tbl_mval %>%
   filter(`Valuation Date` < LATEST_DATE)
 
 tbl_cont <- tbl_cont %>% mutate_at(vars(-`Valuation Date`), dollar)
-tbl_unit <- tbl_unit %>% mutate_at(vars(-`Valuation Date`), .funs = number, accuracy = 0.01)
+tbl_unit <- tbl_unit %>% mutate_at(vars(-`Valuation Date`), .funs = comma, accuracy = 0.01)
 tbl_perc <- tbl_perc %>% mutate_at(vars(-`Valuation Date`), .funs = percent, accuracy = 0.01)
 tbl_mval <- tbl_mval %>% mutate_at(vars(-`Valuation Date`), dollar)
 
@@ -57,7 +58,7 @@ kable(tbl_display, caption = paste0("Data as of ", LATEST_DATE), align = rep('r'
   kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13) %>%
   group_rows("Incremental Contributions", 1, 4) %>%
   group_rows("Owners' Market Value", 5, 7) %>%
-  group_rows("Incremental Units Owned", 8, 10) %>%
+  group_rows("Cumulative Units Owned", 8, 10) %>%
   group_rows("Ownership Percentage", 11, 13)
 ```
 
@@ -81,7 +82,7 @@ kable(tbl_mval, align = rep('r', ncol(tbl_mval))) %>%
   kable_styling(bootstrap_options = c("striped", "hover"), font_size = 13)
 ```
 
-### Incremental Units Owned
+### Cumulative Units Owned
 
 ```{r, echo=FALSE}
 kable(tbl_unit, align = rep('r', ncol(tbl_unit))) %>%
