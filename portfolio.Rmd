@@ -3,52 +3,9 @@ title: "Portfolio Performance"
 output: html_document
 ---
 
-## Account Acitivity
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-LATEST_DATE <- as.Date("2018-09-14")
-
-library(readxl)
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-library(scales)
-library(lubridate)
-
-tbl_unitval <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
-                          sheet = "unit_cumulative", skip = 1)  
-
-tbl_unitval <- tbl_unitval %>% 
-  mutate(`UNIT VALUE` = lead(`Unit Value`)) %>%
-  select(`Valuation Date`, `UNIT VALUE`, `Monthly Return`) %>%
-  drop_na() %>%
-  rename(DATE = `Valuation Date`) %>%
-  rename(RETURN = `Monthly Return`) %>%
-  mutate_at(vars(`UNIT VALUE`), .funs = comma, accuracy = 0.01) %>%
-  mutate_at(vars(RETURN), .funs = percent, accuracy = 0.01) %>%
-  mutate(DESCRIPTION = "  MONTHLY PERFORMANCE")
-
-tbl_activity <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
-                           sheet = "activity", skip = 0)
-# tbl_activity <- tbl_activity %>% 
-#   mutate(`Valuation Date` = ceiling_date(DATE, "month") - days(1))
-
-tbl_activity <- bind_rows(tbl_activity, tbl_unitval) %>%
-  arrange(DATE, desc(DESCRIPTION), SYMBOL)
-
-tbl_activity[is.na(tbl_activity)] <- ""
-
-kable(tbl_activity, caption = paste0("Data as of ", LATEST_DATE), align = c('l','l','l','r','r')) %>%
-  row_spec(grep("MONTHLY PERFORMANCE", tbl_activity$DESCRIPTION), bold = T, color = "white", background = "#2C3E50") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-
-```
-
 ## Unrealized Gain/Loss (Open Positions)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-LATEST_DATE <- as.Date("2018-09-14")
-
 library(readxl)
 library(tidyverse)
 library(knitr)
@@ -89,6 +46,7 @@ end <- today()
 start <- end - weeks(8)
 ```
 
+
 ### Candlestick Charts
 
 #### `r { paste0(start, " to ", end) }`
@@ -110,3 +68,42 @@ tq_get(tbl_port$SYMBOL, from = start - days(2*50), to = end) %>%
 
 ```
 
+
+## Account Acitivity
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(readxl)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(scales)
+library(lubridate)
+
+tbl_unitval <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                          sheet = "unit_cumulative", skip = 1)  
+
+tbl_unitval <- tbl_unitval %>% 
+  mutate(`UNIT VALUE` = lead(`Unit Value`)) %>%
+  select(`Valuation Date`, `UNIT VALUE`, `Monthly Return`) %>%
+  drop_na() %>%
+  rename(DATE = `Valuation Date`) %>%
+  rename(RETURN = `Monthly Return`) %>%
+  mutate_at(vars(`UNIT VALUE`), .funs = comma, accuracy = 0.01) %>%
+  mutate_at(vars(RETURN), .funs = percent, accuracy = 0.01) %>%
+  mutate(DESCRIPTION = "  MONTHLY PERFORMANCE")
+
+tbl_activity <- read_excel(path = "C:\\Users\\pistachio\\Desktop\\Investsment Club\\BaSIC_valuations.xlsx",
+                           sheet = "activity", skip = 0)
+# tbl_activity <- tbl_activity %>% 
+#   mutate(`Valuation Date` = ceiling_date(DATE, "month") - days(1))
+
+tbl_activity <- bind_rows(tbl_activity, tbl_unitval) %>%
+  arrange(DATE, desc(DESCRIPTION), SYMBOL)
+
+tbl_activity[is.na(tbl_activity)] <- ""
+
+kable(tbl_activity, caption = paste0("Data as of ", LATEST_DATE), align = c('l','l','l','r','r')) %>%
+  row_spec(grep("MONTHLY PERFORMANCE", tbl_activity$DESCRIPTION), bold = T, color = "white", background = "#2C3E50") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
